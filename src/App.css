@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+.background {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #ace2e8
+
+}
+
+.heading {
+  height: 12vh;
+  border: black;
+  border-bottom-color: black;
+  text-decoration: underline;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-radius: 5px;
+}
+
+
+.heading h1 {
+  position:absolute;
+  top: -1vh;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Courier New"  
+}
+
+
+.body input {
+  position: absolute;
+  top:30%;
+  align-self: center;
+  justify-self: center;
+  width: 40%;
+  height: 10%;
+  right:30%;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid rgb(141, 178, 193);
+  font-size: 40px;
+  font-family:"Lucida Console", "Courier New", monospace;;
+  
+}
+
+.body {
+  justify-content: center;
+
+}
