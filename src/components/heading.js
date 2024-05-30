@@ -3,8 +3,8 @@
 function Heading() {
 
     return (
-        <div className = "heading">
-            <h1>Cluele</h1>
+        <div className = "heading" >
+            <h1>Hintle</h1>
 
         </div>
     )

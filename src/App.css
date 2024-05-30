@@ -41,7 +41,7 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: #ace2e8
+  background-color: #edf4ff
 
 }
 
@@ -51,24 +51,29 @@
   border-bottom-color: black;
   text-decoration: underline;
   border-bottom-style: solid;
+  border-width: 2px;
   border-bottom-color: gray;
-  border-radius: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color:white;
+
 }
 
 
 .heading h1 {
   position:absolute;
-  top: -1vh;
+  top: -2vh;
   width: 100%;
   text-align: center;
   font-size: 50px;
-  font-family: "Courier New"  
+  font-family: "Copperplate", fantasy;
+  font-weight: bold;
 }
 
 
 .body input {
   position: absolute;
-  top:30%;
+  top:17%;
   align-self: center;
   justify-self: center;
   width: 40%;
@@ -76,13 +81,79 @@
   right:30%;
   text-align: center;
   border-radius: 20px;
-  border: 2px solid rgb(141, 178, 193);
+  border: 1px solid rgb(141, 178, 193);
   font-size: 40px;
-  font-family:"Lucida Console", "Courier New", monospace;;
+  font-family:"Lucida Console", "Courier New", monospace;
+  outline: none;
   
 }
 
-.body {
-  justify-content: center;
+input:focus::placeholder {
+  color: transparent;
+}
 
+.guessList {
+  height: 50px;
+  width: 70%;
+  position: absolute;
+  right: 15%;
+  top: 33%;
+  height: 67%;
+  /* border-radius: 5%; */
+  overflow-y: scroll;
+  justify-content: center;
+  justify-items: center;
+  
+  
+}
+
+.guess {
+  display: flex;
+
+}
+
+
+
+.guess .background_bar {
+  position: absolute;
+  left: 55%;
+  width: 40%;
+  display: flex;
+  height: 15px;
+  border-radius: 20px;
+  background-color: gray;
+  margin-top:35px;
+  border-style: solid;
+  border-width:1px;
+
+}
+.guess space {
+  width:99.5%; min-height: 13vh; margin-right:0px;
+  display:flex;
+  border-color: rgb(175, 175, 175);
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-radius: 20px;
+  right: 5%;
+  border-top-style:solid;
+  background-color: #d9e7ff;
+
+}
+
+
+.textcontainer {
+  position: absolute;
+  width: 55%;
+  min-height: 13vh;
+  display: flex;
+  text-align:center;
+  align-content: center;
+  justify-content: center;
+}
+
+.textcontainer h1 {
+  text-align: center;
+  font-family:Copperplate, Copperplate Gothic Light, fantasy;
+  margin-top: 27px;
+  font-size: 29px;
 }
